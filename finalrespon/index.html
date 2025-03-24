@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animales</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    html {
+      scroll-behavior: auto;
+    }
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        figure {
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        figcaption {
+            text-align: center;
+        }
+        @media (min-width: 772px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            figure {
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            figure:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+        @media (min-width: 992px) {
+            figure {
+                border-radius: 0;
+            }
+            figure:nth-child(3n) {
+                grid-column: 1 / -1;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            figure {
+                background-color: #333;
+                color: #ff0;
+                border-color: black;
+            }
+        }  
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="top">Animales</h1>
+  </header>
+
+  <main>
+    <p>Los animales de granja son esenciales para la vida humana. Desde las vacas que nos dan leche y carne, hasta las gallinas que nos proporcionan huevos frescos, cada uno juega un papel vital. Los cerdos, ovejas y cabras también contribuyen con carne y lana, mientras que los caballos y burros han sido compañeros de trabajo durante siglos. En las granjas, estos animales son criados con cuidado, proporcionándonos alimentos y recursos valiosos para nuestra vida diaria.</p>
+
+    <p>Los animales domésticos, compañeros leales en nuestros hogares, ofrecen mucho más que simple compañía. Perros y gatos, con sus personalidades únicas, llenan nuestras vidas de alegría y afecto. Los pájaros, con sus melodías, crean un ambiente sereno. Los conejos y hámsteres, pequeños y adorables, enseñan responsabilidad. Cada uno, a su manera, enriquece nuestro día a día, convirtiéndose en miembros valiosos de la familia.</p>
+    
+    <div class = "grid">
+        <figure>
+        <img src="images/CABALLO.png" alt="CABALLO" width="200">
+        <figcaption>CABALLO</figcaption>
+        </figure>
+        <figure>
+        <img src="images/CERDO.png" alt="CERDO" width="200">
+        <figcaption>CERDO</figcaption>
+        </figure>
+        <figure>
+        <img src="images/CONEJO.png" alt="CONEJO" width="200">
+        <figcaption>CONEJO</figcaption>
+        </figure>
+        <figure>
+        <img src="images/ELEFANTE.png" alt="ELEFANTE" width="200">
+        <figcaption>ELEFANTE</figcaption>
+        </figure>
+        <figure>
+        <img src="images/GATO.png" alt="GATO" width="200">
+        <figcaption>GATO</figcaption>
+        </figure>
+        <figure>
+        <img src="images/RATON.png" alt="RATON" width="200">
+        <figcaption>RATON</figcaption>
+        </figure>
+        <figure>
+        <img src="images/SAPO.png" alt="SAPO" width="200">
+        <figcaption>SAPO</figcaption>
+        </figure>
+        <figure>
+        <img src="images/TORTUGA.png" alt="TORTUGA" width="200">
+        <figcaption>TORTUGA</figcaption>
+        </figure>
+        <figure>
+        <img src="images/VACA.png" alt="VACA" width="200">
+        <figcaption>VACA</figcaption>
+        </figure>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
+
+</html>
